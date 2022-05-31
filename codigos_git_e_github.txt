@@ -1,0 +1,92 @@
+Codigos para usar no git e github
+
+*Clique com o botão direito dentro da pasta
+que deseja criar um repositório e escolher a 
+opção a "Git bash here"
+
+*digite: git init
+Iniciar uma pasta para git.
+
+*digite: 
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+Configuração de email e usuario no git e github.
+
+*digite: git remote add origin https://github.com/tiagommarques/Fundamentos-JavaScript-Basico
+Adicionar caminho do git.hub no git(local)
+
+*digite: git status
+Verificação de pastas ou arquivos no git.
+
+*digite: git add .
+Add a pasta com arquivos novos ou modificados ao git.
+
+*digite: git commit -m "commit inicial"
+Criar commit do arquivo para enviar a atualização 
+para o git.hub 
+
+*digite: git push --set-upstream origin master
+Enviar a alteracao para o github
+
+*digite: git reflog
+Verificar versões do projeto
+
+*digite: git reset --hard "6dc70d6"
+Resetar para uma versão do anterior ou superior
+
+*digite: git branch
+Verificar as branch's'ativas do repositório
+Obs: a ramificação verde é a que está recebendo
+os arquivos.
+
+*digite: git branch "master"
+Branch principal do repositório
+
+*digite: git branch "staging"
+Branch temporária do repositório
+
+*digite: git checkout "staging ou master"
+Alterar a branch que irá receber os
+arquivos
+
+*digite: git checkout master
+*digite: git merge staging - enviar para branch 
+master as alteracoes da branch temporaria staging.
+
+*Merge - Unir o codigo temporário com
+o codigo principal
+
+*digite: git branch -D staging
+Para apagar o branch localmente
+
+*digite: git pull
+Verificar todas as atualizacoes enviadas para github
+por outras pessoas e atualizar o repositorio local na 
+branch modificada.
+Obs: Procedimento executado antes do git merge
+Obs: Fazer alteração na branch temporário e depois
+unir com a branch padrao/master.
+
+*Principais observacoes na hora de unir os arquivos 
+da branch temporaria com a branch principal:
+1 - git pull da branch principal ou temporaria;
+2 - gerar uma branch temporaria a partir da branch principal;
+3 - trabalhar e adicionar novas funcionalidades na branch temporaria;
+4 - finalizar o trabalho na branch temporaria;
+5 - git checkout na brand principal;
+6 - git merge(unir) no codigo da branch temporaria com a branch principal (depois de testar);
+7 - git push na branch principal.
+
+*Resumo git e github
+git init                                                            - inicializa um novo repositório
+git add .                                                           - adiciona os arquivos atuais ao proximo commit
+git status                                                          - verificar o status altual do repositorio local(git)
+git commit -m "mensagem do commit"                                  - criar um novo commit com uma mensagem
+git push                                                            - envia as atualizações para a nunvem na branch atualmente ativa
+git branch                                                          - permite listar e ver qual branch está ativa atualmente
+git checkout master/staging/outras                                  - permite mudar para uma nova branch
+git checkout -b "nome da branch de origem" "nome da nova branch"    - permite mudar e criar uma nova branch com base em outra
+git merge                                                           - permite fazer o merge da branch ativa atualmente com outra branch
+git pull                                                            - atualiza a branch atualmente ativa
+touch .gitignore                                                    - cria um arquivo para o repositorio ignorar ao enviar para nuvem
+
